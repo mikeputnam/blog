@@ -47,11 +47,27 @@
 		<div class="twelve columns offset-by-one content">
 			<h1 class="remove-bottom" style="margin-top: 40px">Mike Putnam</h1>
 			<hr />
-            <div class="slidy">
-            <h5>Foo</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="post">
+            <h5>A simple python grep</h5>
+            <p>Here’s a simplistic text search script that can be run quickly
+            from a Windows command line or via your favorite editor (gvim).</p>
+<pre>
+import os
+import sys
+
+if sys.argv[1] == '':
+    print "Usage: python grep.py searchterm pathtosearch"
+    sys.exit()
+searchterm = sys.argv[1]
+pathtosearch = sys.argv[2]
+os.chdir(pathtosearch)
+for root,dir,files in os.walk(pathtosearch):
+    for fi in files:
+        path = os.path.join(root,fi)
+        for num,line in enumerate(open(path)): #Thanks Will Maier! http://www.hep.wisc.edu/~wcmaier
+            if searchterm.upper() in line.upper():
+                print "[%s] found in [%s] , line number [%d]" %(searchterm.upper(),path,num+1)
+</pre>
             </div>
             <!--
             <div>

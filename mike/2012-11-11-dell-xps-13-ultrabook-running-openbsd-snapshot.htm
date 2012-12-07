@@ -165,7 +165,7 @@ uhub1 at usb1 "Intel EHCI root hub" rev 2.00/1.00 addr 1
 pcib0 at pci0 dev 31 function 0 "Intel QS67 LPC" rev 0x05
 ahci0 at pci0 dev 31 function 2 "Intel 6 Series AHCI" rev 0x05: msi, AHCI 1.3
 scsibus0 at ahci0: 32 targets
-sd0 at scsibus0 targ 0 lun 0: &lt;ATA, SAMSUNG SSD PM83, CXM1&gt; SCSI3 0/direct fixed naa.5002538043584d30
+sd0 at scsibus0 targ 0 lun 0: &lt; ATA, SAMSUNG SSD PM83, CXM1 &gt; SCSI3 0/direct fixed naa.5002538043584d30
 sd0: 122104MB, 512 bytes/sector, 250069680 sectors, thin
 ichiic0 at pci0 dev 31 function 3 "Intel 6 Series SMBus" rev 0x05: apic 14 int 18
 iic0 at ichiic0
@@ -189,7 +189,7 @@ uhub3 at uhub1 port 1 "Intel Rate Matching Hub" rev 2.00/0.00 addr 2
 umass0 at uhub3 port 2 configuration 1 interface 0 " USB Flash Memory" rev 2.00/1.10 addr 3
 umass0: using SCSI over Bulk-Only
 scsibus1 at umass0: 2 targets, initiator 0
-sd1 at scsibus1 targ 1 lun 0: &lt;, USB Flash Memory, PMAP&gt; SCSI0 0/direct removable serial.09306545B940F32100F0
+sd1 at scsibus1 targ 1 lun 0: &lt; USB Flash Memory, PMAP &gt; SCSI0 0/direct removable serial.09306545B940F32100F0
 sd1: 7650MB, 512 bytes/sector, 15667200 sectors
 ugen0 at uhub3 port 5 "Intel product 0x0189" rev 2.00/69.19 addr 4
 vscsi0 at root

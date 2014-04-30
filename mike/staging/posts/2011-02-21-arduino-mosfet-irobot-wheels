@@ -1,4 +1,4 @@
-<h5>Arduino &#44; MOSFET &#44; iRobot wheels</h5>
+<h2>Arduino &#44; MOSFET &#44; iRobot wheels</h2>
 
 <p>Using the <a href="http://itp.nyu.edu/physcomp/Tutorials/HighCurrentLoads">great “Physical Computing” tutorials</a> at nyu.edu I was able to put together a MOSFET that allows the low voltage Arduino to control a higher voltage (6v) circuit.
 </p>

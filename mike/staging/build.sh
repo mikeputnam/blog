@@ -14,5 +14,4 @@ for latest in `find * | sort -r | head -n 1`;do cat ../top.template $latest ../b
 for post in `find * | sort -r`;do cat ../top.template $post ../bot.template > ../../$post.htm; done
 cd ~/src/mikeputnam.github.com
 git add --all;git commit -m "$1";git push git@github.com:mikeputnam/mikeputnam.github.com.git
-git merge gh-pages
 git push git@github.com:mikeputnam/mikeputnam.github.com.git

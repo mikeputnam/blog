@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/mikeputnam
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://theputnams.net
+  * I am mikeputnam (https://keybase.io/mikeputnam) on keybase.
+  * I have a public key with fingerprint 0E2D DC81 2553 4D10 F266  69B9 11F5 B074 FEA3 DFCB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0e2ddc8125534d10f26669b911f5b074fea3dfcb",
+            "host": "keybase.io",
+            "key_id": "11f5b074fea3dfcb",
+            "uid": "52cb5944f38437916fad846b2ad1cd00",
+            "username": "mikeputnam"
+        },
+        "service": {
+            "hostname": "theputnams.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411329305,
+    "expire_in": 157680000,
+    "prev": "4dfb7f7ba13ccc7dc2c2040ee068cef949d51aea3871f99582fadf40423e2c1b",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGbwMvMwMQo+HVDyb/F908znj7wLYkhRF5XsVopKT+lUsmqWik7FUylZealpxYV
+FGXmlShZKRmkGqWkJFsYGpmaGpukGBqkGZmZmVkmWRoappkmGZibpKUmGqekJScp
+6Shl5BeDdACNSUosTtXLzAeKATnxmSlAUSzqS8ESpkbJSaaWJiZpxhYmxuaWhmZp
+iSkWJmZJRokphskpBgYghcWpRXmJualA1bmZ2akFpSVAnlKtjhJQvCwzORXkapDl
+UDUlGVAlxXp5qSVA/QVF+SX5yfk5QLmMkpICK5DWksoCkNry1KR4qCnxSZl5KUC/
+AzWUpRYVZ+bnKVkZAlUml2SCjDU0MTQ0NrI0NjDVUUqtKMgsSo3PBKkwNTezMAAC
+kDWpZUAjTVLSkszTzJMSDY2Tk5PNU5KNko0MTAxSUw3MLJJT0yxNLFNMDROBwWBh
+bphmaWlqYQT0cZqJgYmRcapRsiEoZIpTC/PylazMgc5MTAcaWZyZnpdYUlqUqlTL
+1ckkw8LAyMTAxsoEij4GLk4BWKT+WirAcFZ21ay6wO2zL/pOea3JHGu8SPfmgqcf
+JA53uSzljVxtwHLg2VGjvfuWsV9UPHVp7YGr7O9PZEieEn3BE9JvdPBZ2uUc/2lr
+D8e+EJBzz3x/pI/z8YILNeVXuFxVxbkuLxRv/2BzW2FZRUXuVKkLIbe133Jw68W8
+ZNXVPufsfVVE9fFzA0nG/zIOFRpPm28UnNy9btXxLxxdi2blLXX01p77tPtobsD1
+vkVHI1SvsgWdPeamwrh0saJO3ZcODf+9GSurWfJcU8N/8X4Onr7n084Vu25fubou
+SrlX/Y2CaJy+WnexxV3OOl6Hjd1aAc/Fj60Q4FOtUAp5W+/67Y5ho1vEky1f+nfN
+3ixufMd9bhq37aOFc3YetRQ7qNbDzV9iu+/Vu/MLYgqM3GIPtBxdn6etdHLdOukH
+ph0X5qy+kKkcbnXy14z8T8VzZsbtu9/RxCa+0mh/+muxX53xM2LfVTF/Svm3+sy3
+PFOD0t9dm94tMvKI3LNudZ2/Qe/t+cqXjuW/nfaia56wfpPY1ZY7B5wd9Jh/q0/f
+/8Y4Ys0Lje65KxTTb9WFdBwXNMqZ0FAp3RYVeEI+Zct92ySXjs/yjp/+1p/YZSXD
+tTj0by7fiobAHVel17gx/v56qHkO58XGqebVd/79XjV5mrF3Jof9w7qERbl8O1KO
+8vi9srPY8O2mvpXpnNPTDr3mfzLNgjnHdN8uh8xHahv949cbNwMA
+=0eE/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mikeputnam
+
+==================================================================
+

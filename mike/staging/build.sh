@@ -7,7 +7,7 @@ cd ~/src/mikeputnam.github.com/mike/staging/posts
 html="<ul>" 
 for post in `find * | sort -r`;do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
 html=$html"</ul>" 
-printf '%s\n' "$html" | cat ../top.template - ../bot.template > ../../index.htm
+printf '%s\n' "$html" | cat ../top.template - ../bot.template > ../../index.html
 #assemble all the blog pages from all the chunks
 for post in `find * | sort -r`;do cat ../top.template $post ../bot.template > ../../$post.htm; done
 cd ~/src/mikeputnam.github.com

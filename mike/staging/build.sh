@@ -3,13 +3,11 @@ if [[ $# -eq 0 ]];then
    exit
 fi
 cd ~/src/mikeputnam.github.com/mike/staging/posts
-#assemble sitemap from HTML chunks
+#assemble index from HTML chunks
 html="<ul>" 
 for post in `find * | sort -r`;do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
 html=$html"</ul>" 
-printf '%s\n' "$html" | cat ../top.template - ../bot.template > ../../sitemap.htm
-#find the most recent HTML chunk and make that the index.html
-for latest in `find * | sort -r | head -n 1`;do cat ../top.template $latest ../bot.template > ../../index.html; done
+printf '%s\n' "$html" | cat ../top.template - ../bot.template > ../../index.htm
 #assemble all the blog pages from all the chunks
 for post in `find * | sort -r`;do cat ../top.template $post ../bot.template > ../../$post.htm; done
 cd ~/src/mikeputnam.github.com

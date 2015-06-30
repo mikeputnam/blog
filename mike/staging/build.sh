@@ -43,7 +43,7 @@ atom_footer=$(cat <<EOM
 </feed>
 EOM
 )
-echo $atom_header$atom_entries$atom_footer > ../feed
+echo $atom_header$atom_entries$atom_footer > ../../feed
 cd ~/src/mikeputnam.github.com
 git add --all;git commit -m "$1";git push git@github.com:mikeputnam/mikeputnam.github.com.git
 git checkout master

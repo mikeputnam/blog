@@ -44,10 +44,10 @@ atom_footer=$(cat <<EOM
 EOM
 )
 echo $atom_header$atom_entries$atom_footer > ../feed
-#cd ~/src/mikeputnam.github.com
-#git add --all;git commit -m "$1";git push git@github.com:mikeputnam/mikeputnam.github.com.git
-#git checkout master
-#git merge gh-pages
-#git push git@github.com:mikeputnam/mikeputnam.github.com.git
-#git checkout gh-pages
+cd ~/src/mikeputnam.github.com
+git add --all;git commit -m "$1";git push git@github.com:mikeputnam/mikeputnam.github.com.git
+git checkout master
+git merge gh-pages
+git push git@github.com:mikeputnam/mikeputnam.github.com.git
+git checkout gh-pages
 

@@ -1,6 +1,6 @@
 <h2>Organize your docker stuff with Labels!</h2>
 
-<p><img src="/mike/images/2016-07-18-labelit.jpg"/><sub>Image source: http://imagegenerator.fuzzimo.com/embossedlabels/</sub></p>
+<div><img class="post-image" src="/mike/images/2016-07-18-labelit.jpg"/><div class="caption">Image source: http://imagegenerator.fuzzimo.com/embossedlabels/</div></div>
 
 <p>How can you organize your docker containers? Labels!</p>
 

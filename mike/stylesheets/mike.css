@@ -1,8 +1,18 @@
-#gravatar,.right{float:right}
-pre {font-family: Courier New,monospace}
-span#code {
+#code {
     display: inline;
     font-family: monospace;
     white-space: pre;
+
 }
+#gravatar,.right{float:right}
 #profile-pic{float:left;padding-right: 5px}
+.caption{
+    font-size: 50%;
+    font-weight: bold;
+}
+.post-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -50,4 +50,4 @@ git checkout master
 git merge gh-pages
 git push git@github.com:mikeputnam/mikeputnam.github.com.git
 git checkout gh-pages
-
+git push

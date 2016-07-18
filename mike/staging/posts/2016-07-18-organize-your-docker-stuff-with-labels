@@ -1,0 +1,15 @@
+<h2>Organize your docker stuff with Labels!</h2>
+
+<p><img src="/mike/images/2016-07-18-labelit.jpg"/>[1]</p>
+
+<p>How can you organize your docker containers? Labels!</p>
+
+<p>The moment you cross over the mental threshold from using docker for local development/experimentation to using docker as a host for important things, you'll begin to have questions. One of the early questions I had was, "How can I organize all these containers when all <span style="white-space: pre">$ docker ps -a</span> gives me is "NAMES"?  The answer to that question is <a href="https://docs.docker.com/engine/userguide/labels-custom-metadata/">Labels!</a></p>
+
+<p>You can assign labels to images within <span style="white-space: pre">Dockerfiles</span> or to containers with the <span style="white-space: pre">$ docker run</span> and <span style="white-space: pre">$ docker daemon</span> commands.</p>
+
+<p>You can query for images with <span style="white-space: pre">$ docker images --filter "label=color=blue"</span>, containers with <span style="white-space: pre">$ docker ps --filter "label=color=blue"</span> or via <span style="white-space: pre">$ docker inspect</span></p>
+
+<p>Docker treats the labels as simple strings, but if you want to get fancy you can store string-escaped JSON data if you want to write your own label parser.</p>
+
+<p>[1] Thanks for the free label image! http://imagegenerator.fuzzimo.com/embossedlabels/</p>

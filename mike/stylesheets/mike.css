@@ -1,3 +1,8 @@
 #gravatar,.right{float:right}
 pre {font-family: Courier New,monospace}
+span#code {
+    display: inline;
+    font-family: monospace;
+    white-space: pre;
+}
 #profile-pic{float:left;padding-right: 5px}

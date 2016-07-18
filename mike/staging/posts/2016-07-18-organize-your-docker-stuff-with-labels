@@ -1,8 +1,8 @@
 <h2>How can you organize your docker containers? Labels!</h2>
 
-<div><img src="/mike/images/2016-07-18-labelit.jpg"/><div class="caption">Image source: http://imagegenerator.fuzzimo.com/embossedlabels/</div></div>
+<p><img src="/mike/images/2016-07-18-labelit.jpg"/><div class="caption">Image source: http://imagegenerator.fuzzimo.com/embossedlabels/</div></p>
 
-<p>The moment you cross over the mental threshold from using docker for local development/experimentation to using docker as a host for important things, you'll begin to have questions. One of the early questions I had was, "How can I organize all these containers when all <span id="code">$ docker ps -a</span> gives me is "NAMES"?  The answer to that question is <a href="https://docs.docker.com/engine/userguide/labels-custom-metadata/">Labels!</a></p>
+<p>The moment you cross over the mental threshold from using <a href="https://www.docker.com/">docker</a> for local development/experimentation to using docker as a host for important things, you'll begin to have questions. One of the early questions I had was, "How can I organize all these containers when all <span id="code">$ docker ps -a</span> gives me is "NAMES"?  The answer to that question is <a href="https://docs.docker.com/engine/userguide/labels-custom-metadata/">Labels!</a></p>
 
 <p>You can assign labels to images within <span id="code">Dockerfiles</span> or to containers with the <span id="code">$ docker run</span> and <span id="code">$ docker daemon</span> commands.</p>
 

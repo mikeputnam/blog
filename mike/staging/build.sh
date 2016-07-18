@@ -16,7 +16,7 @@ atom_header=$(cat <<EOM
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Mike Putnam</title>
 <link rel="self" type="application/atom+xml" href="http://theputnams.net/mike/feed"/>
-<updated>2015-06-30T00:00:00Z</updated>
+<updated>$(date -I)T00:00:00Z</updated>
 <id>http://theputnams.net/mike</id>
 <author>
 <name>Mike Putnam</name>

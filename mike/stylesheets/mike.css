@@ -1,14 +1,13 @@
 #code {
+    font-weight: bold;
     display: inline;
     font-family: monospace;
     white-space: pre;
-
 }
 #gravatar,.right{float:right}
 #profile-pic{float:left;padding-right: 5px}
 .caption{
-    font-size: 50%;
-    font-weight: bold;
+    font-size: 70%;
 }
 .post-image{
     display: block;

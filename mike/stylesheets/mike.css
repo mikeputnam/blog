@@ -6,10 +6,10 @@
 }
 #gravatar,.right{float:right}
 #profile-pic{float:left;padding-right: 5px}
-.caption{
-    font-size: 70%;
-}
 .post-image{
     float:left;
+    font-size: 70%;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 

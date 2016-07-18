@@ -1,6 +1,5 @@
-#code {
+pre,#code {
     font-weight: bold;
-    display: inline;
     font-family: monospace;
     white-space: pre;
 }

@@ -1,3 +1,4 @@
+#!/bin/bash
 if [[ $# -eq 0 ]];then
    print "Forgot the commit message, you dope."
    exit

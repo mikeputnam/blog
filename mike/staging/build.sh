@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# -eq 0 ]];then
-   print "Forgot the commit message, you dope."
+   printf "Forgot the commit message, you dope.\n"
    exit
 fi
 cd ~/src/mikeputnam.github.com/mike/staging/posts

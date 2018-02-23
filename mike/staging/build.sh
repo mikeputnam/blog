@@ -6,11 +6,11 @@ fi
 cd ~/src/mikeputnam.github.com/mike/staging/posts
 #assemble index from HTML chunks
 html="<ul>"
-for post in `find * | sort -r`;do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
+for post in $(find * | sort -r);do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
 html=$html"</ul>"
 printf '%s\n' "$html" | cat ../top.template - ../bot.template > ../../index.html
 #assemble all the blog pages from all the chunks
-for post in `find * | sort -r`;do cat ../top.template $post ../bot.template > ../../$post.htm; done
+for post in $(find * | sort -r);do cat ../top.template $post ../bot.template > ../../$post.htm; done
 #assemble atom feed from all the chunks
 atom_header=$(cat <<EOM
 <?xml version="1.0" encoding="utf-8"?>
@@ -26,7 +26,7 @@ atom_header=$(cat <<EOM
 EOM
 )
 #
-for post in `find * | sort -r`;
+for post in $(find * | sort -r);
 do
 atom_entries=${atom_entries}$(cat <<EOM
 <entry>

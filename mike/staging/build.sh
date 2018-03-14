@@ -3,7 +3,7 @@ if [[ $# -eq 0 ]];then
    printf "Forgot the commit message, you dope.\n"
    exit
 fi
-cd ~/src/mikeputnam.github.com/mike/staging/posts
+cd ~/src/blog/mike/staging/posts
 #assemble index from HTML chunks
 html="<ul>"
 for post in $(find * | sort -r);do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
@@ -45,10 +45,5 @@ atom_footer=$(cat <<EOM
 EOM
 )
 echo $atom_header$atom_entries$atom_footer > ../../feed.atom
-cd ~/src/mikeputnam.github.com
-git add --all;git commit -m "$1";git push git@github.com:mikeputnam/mikeputnam.github.com.git
-git checkout master
-git merge gh-pages
-git push git@github.com:mikeputnam/mikeputnam.github.com.git
-git checkout gh-pages
-git push
+cd ~/src/blog
+git add --all && git commit -m "$1" && git push origin master

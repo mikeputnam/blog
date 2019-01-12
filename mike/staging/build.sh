@@ -46,4 +46,4 @@ EOM
 )
 echo $atom_header$atom_entries$atom_footer > ../../feed.atom
 cd ~/src/blog
-git add --all && git commit -m "$1" && git push origin master
+#git add --all && git commit -m "$1" && git push origin master

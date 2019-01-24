@@ -10,4 +10,6 @@ pre,#code {
     margin-bottom: 1em;
     margin-top: 1em;
 }
-
+img, embed, object, video {
+  max-width: 100%;
+}

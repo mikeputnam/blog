@@ -1,14 +1,11 @@
-TODO:
-    - finish letsencrypt
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+-- this is the post-update hook on the git server side
+
+#!/bin/bash
+sudo chown -R mike:mike /var/www/theputnams.net/
+git --work-tree=/var/www/theputnams.net/ --git-dir=/srv/blog.git checkout -f master
+cd /var/www/theputnams.net/mike
+cd staging
+./build.sh
+cd /var/www/theputnams.net/
+sudo chown -R mike:www-data *
+sudo systemctl reload nginx

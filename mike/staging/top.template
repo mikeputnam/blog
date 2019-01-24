@@ -60,24 +60,26 @@
 
 	<div class="container">
 		<div class="twelve columns offset-by-one content">
+			<h1 class="remove-bottom" style="margin-top: 40px">Mike Putnam</h1>
 
-            <div id="the-header">
+            <p>
+            <img id="profile-pic" alt="profile-pic" src="https://www.gravatar.com/avatar/299072363d3c597f405830a33e7535b7?s=80"/>
+            All
+            <a href="/mike/">posts ...</a>
+            <a href="/mike/feed.atom"><img id="rss-atom-feed" alt="rss-atom-feed" src="images/rss-atom.png"/></a><br/>
 
-                <div>
-                    <a href="/mike/"><img id="profile-pic" alt="profile-pic" src="https://www.gravatar.com/avatar/299072363d3c597f405830a33e7535b7?s=80"/></a><h1>Mike Putnam</h1>
-                </div>
+            Connect via: 
+            <a href="https://github.com/mikeputnam/">Github</a>
+            <a href="https://www.instagram.com/mike_putnam/">Instagram</a>
+            <a href="http://www.linkedin.com/in/mikeputnamwi/">LinkedIn</a>
+            <a href="http://twitter.com/mikeputnam/">Twitter</a>
+            <a href="https://www.youtube.com/user/mikeputnam">Youtube</a>
+            <br/>
 
-                <div>
-                    <a href="http://appletonmakerspace.org/">Appleton Makerspace</a>
-                    <a href="https://github.com/mikeputnam/">Github</a>
-                    <a href="https://www.instagram.com/mike_putnam/">Instagram</a>
-                    <a href="http://www.linkedin.com/in/mikeputnamwi/">LinkedIn</a>
-                    <a href="/mike/feed.atom">RSS/Atom</a>
-                    <a href="http://twitter.com/mikeputnam/">Twitter</a>
-                    <a href="http://wisconsinlinux.org/">Wisconsin Linux Users</a>
-                    <a href="https://www.youtube.com/user/mikeputnam">Youtube</a>
-                </div>
+            Get involved:
+            <a href="http://appletonmakerspace.org/">Appleton Makerspace</a>
+            <a href="http://wisconsinlinux.org/">Wisconsin Linux Users</a>
+            </p>
 
-            </div> <!-- the-header -->
-
+			<hr />
 <!-- end top.template-->

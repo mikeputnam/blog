@@ -3,7 +3,7 @@ if [[ $# -eq 0 ]];then
    printf "Forgot the commit message, you dope.\n"
    exit
 fi
-cd ~/src/blog/mike/staging/posts
+cd posts/ #invoked from staging/
 #assemble index from HTML chunks
 html="<ul>"
 for post in $(find * | sort -r);do html=$html"<li><a href=\"$post.htm\">$post</a></li>"; done
@@ -45,5 +45,4 @@ atom_footer=$(cat <<EOM
 EOM
 )
 echo $atom_header$atom_entries$atom_footer > ../../feed.atom
-cd ~/src/blog
-git add --all && git commit -m "$1" && git push origin master
+cd ../../../ #root of repo

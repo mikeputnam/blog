@@ -1,8 +1,4 @@
 #!/bin/bash
-if [[ $# -eq 0 ]];then
-   printf "Forgot the commit message, you dope.\n"
-   exit
-fi
 cd posts/ #invoked from staging/
 #assemble index from HTML chunks
 html="<ul>"

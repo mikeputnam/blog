@@ -3,7 +3,6 @@ pre,#code {
     font-family: monospace;
     white-space: pre;
 }
-#gravatar,.right{float:right}
 #profile-pic{float:left;padding-right: 5px}
 .post-image{
     font-size: 70%;
@@ -13,3 +12,4 @@ pre,#code {
 img, embed, object, video {
   max-width: 100%;
 }
+#the-header{padding-top: 25px;padding-bottom: 25px}

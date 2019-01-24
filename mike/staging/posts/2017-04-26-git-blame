@@ -1,5 +1,7 @@
 <h2>An introduction to git blame</h2>
 
+<div class='embed-container'>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nLWJV2SdXY4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <p>A gentle introduction to git blame.</p>

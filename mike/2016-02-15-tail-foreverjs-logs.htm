@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+    <meta name="google-site-verification" content="JlgpisonWyTitQsVmDd16L89KekPEutWUu5mLkRR67I" />
+	<meta charset="utf-8">
+	<title>Mike Putnam</title>
+	<meta name="description" content="">
+	<meta name="author" content="Mike Putnam">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="stylesheets/mike.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="https://www.gravatar.com/avatar/299072363d3c597f405830a33e7535b7?s=16">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <script>
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-168979-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+		<div class="thirteen columns offset-by-one content">
+
+            <div id="the-header">
+
+                <div>
+                    <a href="/mike/"><img id="profile-pic" alt="profile-pic" src="https://www.gravatar.com/avatar/299072363d3c597f405830a33e7535b7?s=80"/></a><h1>Mike Putnam</h1>
+                </div>
+
+                <div>
+                    <a href="http://appletonmakerspace.org/">Appleton Makerspace</a>
+                    <a href="https://github.com/mikeputnam/">Github</a>
+                    <a href="https://www.instagram.com/mike_putnam/">Instagram</a>
+                    <a href="http://www.linkedin.com/in/mikeputnamwi/">LinkedIn</a>
+                    <a href="/mike/feed.atom">RSS/Atom</a>
+                    <a href="https://twitter.com/mikeputnam/">Twitter</a>
+                    <a href="http://wisconsinlinux.org/">Wisconsin Linux Users</a>
+                    <a href="https://www.youtube.com/user/mikeputnam">Youtube</a>
+                </div>
+
+            </div> <!-- the-header -->
+
+<!-- end top.template-->
+<h2>Tail foreverjs logs</h2>
+
+<p><a href="https://github.com/foreverjs/forever">Forever</a> is "a simple CLI tool for ensuring that a given script runs continuously (i.e. forever)."</p>
+
+<p>Forever includes a command ( <span id="code">$ forever logs 0</span> ) to show you the last 100 lines of stdout/stderr for the processes it is watching. Often 100 lines is enough to see what you were hoping to see.</p>
+
+<p>But sometimes 100 lines is not enough and instead you would like to see a live tail of the forever watched process. Linux/Unix based operating system tools to the rescue!</p>
+
+<p>Running <span id="code">$ forever logs</span> (assuming you are only watching a single process) will emit 3 lines of output. The third line contains the full path to the log file. Knowing this we can construct a simple pipeline:</p>
+
+<pre>
+$ forever logs | awk 'NR==3' | awk '{print $4}' | xargs tail -f
+</pre>
+
+<p>Above, forever emits its output => awk grabs the 3rd line using it's "number of record/NR" syntax => another awk prints the 4th space delimited string from that line (the path) => and finally xargs takes that and runs tail -f(ollow)!</p>
+
+<p>Familiarity with these *nix tools is infinitely reuseable as plain text is the most common protocol and these tools are purpose built for working with text.</p>
+<!-- start bot.template-->
+
+		</div><!-- content -->
+	</div><!-- container -->
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

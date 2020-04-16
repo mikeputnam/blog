@@ -15,3 +15,8 @@ $ forever logs | awk 'NR==3' | awk '{print $4}' | xargs tail -f
 <p>Above, forever emits its output => awk grabs the 3rd line using it's "number of record/NR" syntax => another awk prints the 4th space delimited string from that line (the path) => and finally xargs takes that and runs tail -f(ollow)!</p>
 
 <p>Familiarity with these *nix tools is infinitely reuseable as plain text is the most common protocol and these tools are purpose built for working with text.</p>
+
+<p>2020-04-16 Edit: If you are running a version more recent than v0.14.1 released Jul 1, 2015, there's a built-in flag to tail logs. :facepalm:</p>
+<pre>
+$ forever logs 0 -f
+</pre>

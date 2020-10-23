@@ -1,11 +1,8 @@
-<h2>Arduino Happy Birthday Emitter</h2>
+<u>NAME</u>
+<b>Arduino Happy Birthday Emitter</b>
 
-<p>Using an 8 ohm speaker rescued from a defunct <a href="http://www.irobot.com/">iRobot Scooba</a>, some radio wire from an underground dog fence, an <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove">Arduino Duemilanove</a> procured from <a href="http://adafruit.com/">http://adafruit.com/</a>, and a tone demo sketch from <a href="http://arduino.cc/en/Tutorial/Tone">http://arduino.cc/en/Tutorial/Tone</a> , the kids and I made a Happy Birthday emitter for mom.  Happy Birthday Amy!
-</p>
+<u>DESCRIPTION</u>
+<b>Using an 8 ohm speaker rescued from a defunct <a href="http://www.irobot.com/">iRobot Scooba</a>, some radio wire from an underground dog fence, an <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove">Arduino Duemilanove</a> procured from <a href="http://adafruit.com/">http://adafruit.com/</a>, and a tone demo sketch from <a href="http://arduino.cc/en/Tutorial/Tone">http://arduino.cc/en/Tutorial/Tone</a> , the kids and I made a Happy Birthday emitter for mom.  Happy Birthday Amy!
 
-<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Uxvpbt7mtrU?hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/Uxvpbt7mtrU?hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object>
-</p>
+<p><b>Here are the <a href="https://gist.github.com/2820669">happybirthdayemitter.pde</a> sketch and accompanying <a href="https://gist.github.com/2820675">pitches.h</a> header file.</b></p>
 
-<p>Here are the <a href="https://gist.github.com/2820669">happybirthdayemitter.pde</a> sketch and accompanying <a href="https://gist.github.com/2820675">pitches.h</a> header file.
-</p>
-                

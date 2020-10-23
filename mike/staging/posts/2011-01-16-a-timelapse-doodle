@@ -1,22 +1,24 @@
-<h2>A Timelapse Doodle</h2>
+<u>NAME</u>
+<b>A Timelapse Doodle</b>
 
-<p><iframe src="http://player.vimeo.com/video/18832769" width="400" height="295" frameborder="0"></iframe>
-</p>
+<u>SYNOPSIS</u>
+<b><iframe src="https://vimeo.com/18832769" width="400" height="295" frameborder="0"></iframe>
+</b>
 
-<p>A little doodle inspired by <a href="http://rasterweb.net/raster/tag/tlbot/">Raster's creations with Timelapse Bot</a> and the <a href="http://dhmn.net/Work+Session+18+Dec+2010">12/18/2010 Distributed Hacker Maker Network meeting</a> where I made <a href="http://dhmn.net">an impromptu claymation</a> from stills taken of the meeting.
-</p>
+<u>DESCRIPTION</u>
+<p><b>A little doodle inspired by <a href="http://rasterweb.net/raster/tag/tlbot/">Raster's creations with Timelapse Bot</a> and the 12/18/2010 Distributed Hacker Maker Network meeting where I made an impromptu claymation from stills taken of the meeting.
+</b>
 
-<p>While drawing has never really been an interest of mine, drawing in-real-life frames for animation is pretty fun.
-</p>
+<b>While drawing has never really been an interest of mine, drawing in-real-life frames for animation is pretty fun.
+</b>
 
-<p>Used in the making:
-</p>
+<b>Used in the making:
+</b>
 
+<b>
 <ul>
 <li>Canon Powershot A550 (nothing fancy)</li>
 <li>Whiteboard/dry erase marker</li>
-<li>The free Windows Movie Maker for composition</li>
-<li>Fedora 14 Linux and ffmpeg2theora for <a
-href="http://archive.org/download/ATimelapseDoodle/atimelapsedoodle-jan-2011.ogv">the Ogg/Theora version of the movie. </a></li>
+<li>Fedora 14 Linux and ffmpeg2theora for <a href="http://archive.org/download/ATimelapseDoodle/atimelapsedoodle-jan-2011.ogv">the Ogg/Theora version of the movie. </a></li>
 </ul>
-                
+</b>

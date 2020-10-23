@@ -1,80 +1,51 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!-- BEGIN top.template -->
+<html lang="en">
 <head>
-
-	<!-- Basic Page Needs
-  ================================================== -->
-    <meta name="google-site-verification" content="JlgpisonWyTitQsVmDd16L89KekPEutWUu5mLkRR67I" />
-	<meta charset="utf-8">
-	<title>Mike Putnam</title>
-	<meta name="description" content="">
-	<meta name="author" content="Mike Putnam">
-
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-
-	<link rel="stylesheet" href="stylesheets/mike.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-
-    <script>
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-168979-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-
-</head>
+<title>mikeputnam</title>
+<meta name="google-site-verification" content="JlgpisonWyTitQsVmDd16L89KekPEutWUu5mLkRR67I" />
+<meta name="author" content="Mike Putnam">
+<style>
+a          { color: lime; }
+a:hover    { color: black; background-color: lime; }
+b          { margin-left: 4em; font-weight: normal; display: block; }
+body       { background-color: #000000; color: #ccc; font-family: monospace; }
+u          { color: red; margin-top: 1em; text-decoration: none; display: block; }
+.ava       { height: 100px; }
+.arg       { color: red; font-weight: bold; }
+.cen       { float: left; width:33%; text-align: center; }
+.fil       { line-height: 3; display: block; }
+.hfo       { font-weight: bold; margin-top: 1em; margin-bottom: 1em; }
+.hid       { display: none; }
+.hig       { background-color: blue; color: yellow; }
+.ind-in    { margin-left: 4em; white-space: pre; }
+.lef       { float: left; width:33%; text-align: left; }
+.rig       { float: left; width:33%; text-align: right; }
+.val       { color: lime; font-weight: bold; }
+</style>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-168979-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script>
+function toggleViewable() {
+  var collection = Array.from(document.getElementsByClassName("hid"));
+  for (item of collection) {
+    item.classList.remove("hid");
+  }
+}
+</script>
 <body>
 
+<div class="hfo"><span class="lef">BLOG(6)</span><span class="cen">BLOG MANUAL</span><span class="rig">BLOG(6)</span></div>
+<!-- END top.template -->
 
-
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<div class="container">
-		<div class="thirteen columns offset-by-one content">
-
-            <div id="the-header">
-
-                <div>
-                    <a href="/mike/"><img id="profile-pic" alt="profile-pic" src="/mike/images/mike-80x80.jpg"/></a><h1>Mike Putnam</h1>
-                </div>
-
-                <div>
-                    <a href="http://appletonmakerspace.org/">Appleton Makerspace</a>
-                    <a href="https://github.com/mikeputnam/">Github</a>
-                    <a href="https://www.instagram.com/mike_putnam/">Instagram</a>
-                    <a href="http://www.linkedin.com/in/mikeputnamwi/">LinkedIn</a>
-                    <a href="/mike/feed.atom">RSS/Atom</a>
-                    <a href="https://twitter.com/mikeputnam/">Twitter</a>
-                    <a href="http://wisconsinlinux.org/">Wisconsin Linux Users</a>
-                    <a href="https://www.youtube.com/user/mikeputnam">Youtube</a>
-                </div>
-
-            </div> <!-- the-header -->
-
-<!-- end top.template-->
 <h2>Milwaukee Makerspace Grand Opening Road Trip – Preamble</h2>
 
 <p>Just as we did in January 2011 for <a href="2011-01-24-madhackerhaus-1.htm">MadHackerHaus 1</a> in Madison, WI the <a href="http://dhmn.net/">Distributed Hacker/Maker Network</a> will be taking a road trip – this time to <a href="http://milwaukeemakerspace.org/content/grand-opening-party">Milwaukee Makerspace’s Grand Opening and Mini Maker Fair</a>! Childrens Powerwheels retrofitted with grown-up sized wheelchair battery/motors and raced? Circuit bending music jam? Intro to Soldering class? Arduino? Biodiesel? DIY electric cars!? If any of this sounds interesting, we’ll see you in Milwaukee on Saturday 4/9/2011 from 12:00noon-10:00pm.
@@ -83,12 +54,27 @@
 <p><img src="http://milwaukeemakerspace.org/sites/default/files/mm-grand-opening-web-536.jpg" alt="Milwaukee Makerspace">
 </p>
                 
-<!-- start bot.template-->
+<!-- BEGIN bottom-above-posts.template -->
+<u>SEE ALSO</u>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://appletonmakerspace.org/">appletonmakerspace(1)</a>,
+<a href="https://github.com/mikeputnam">github(1)</a>,
+<a href="https://www.instagram.com/mike_putnam/">instagram(6)</a>,
+<a href="https://twitter.com/mikeputnam/">twitter(6)</a>,
+<a href="http://wisconsinlinux.org/">wisconsinlinux(1)</a>,
+<a href="https://www.youtube.com/user/mikeputnam">youtube(6)</a></b>
 
-		</div><!-- content -->
-	</div><!-- container -->
+<u>AUTHORS</u>
+<b>Mike Putnam <span class="val">mike@theputnams.net</span></b>
+<!-- END bottom-above-posts.template -->
+<!-- BEGIN post-index --><u>FILES</u><b><span class="fil"    ><a href="2017-07-06-whats-going-on-in-tech.htm">2017-07-06-whats-going-on-in-tech</a></span></b><b><span class="fil"    ><a href="2017-04-26-git-blame.htm">2017-04-26-git-blame</a></span></b><b><span class="fil"    ><a href="2016-11-09-the-majority-of-us-voters-just-endorsed-sexual-assault.htm">2016-11-09-the-majority-of-us-voters-just-endorsed-sexual-assault</a></span></b><b><span class="fil hid"><a href="2016-11-09-the-majority-of-us-voters-just-endorsed-sexual-assault.htm">2016-11-09-the-majority-of-us-voters-just-endorsed-sexual-assault</a></span></b><b><span class="fil hid"><a href="2016-10-27-choose-your-own-adventure-lockin.htm">2016-10-27-choose-your-own-adventure-lockin</a></span></b><b><span class="fil hid"><a href="2016-09-23-the-zen-of-python.htm">2016-09-23-the-zen-of-python</a></span></b><b><span class="fil hid"><a href="2016-07-18-organize-your-docker-stuff-with-labels.htm">2016-07-18-organize-your-docker-stuff-with-labels</a></span></b><b><span class="fil hid"><a href="2016-02-15-tail-foreverjs-logs.htm">2016-02-15-tail-foreverjs-logs</a></span></b><b><span class="fil hid"><a href="2015-06-30-coder-cooperative.htm">2015-06-30-coder-cooperative</a></span></b><b><span class="fil hid"><a href="2014-09-28-learning-to-weld.htm">2014-09-28-learning-to-weld</a></span></b><b><span class="fil hid"><a href="2014-05-04-a-copper-thing.htm">2014-05-04-a-copper-thing</a></span></b><b><span class="fil hid"><a href="2014-05-01-openbsd-55-released-today.htm">2014-05-01-openbsd-55-released-today</a></span></b><b><span class="fil hid"><a href="2014-04-30-what-to-make.htm">2014-04-30-what-to-make</a></span></b><b><span class="fil hid"><a href="2013-10-10-appleton-makerspace-grand-opening.htm">2013-10-10-appleton-makerspace-grand-opening</a></span></b><b><span class="fil hid"><a href="2013-03-18-a-birthday.htm">2013-03-18-a-birthday</a></span></b><b><span class="fil hid"><a href="2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot.htm">2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot</a></span></b><b><span class="fil hid"><a href="2011-09-28-why-i-love-barcamp.htm">2011-09-28-why-i-love-barcamp</a></span></b><b><span class="fil hid"><a href="2011-09-23-fvtc-fablab-in-appleton-wi.htm">2011-09-23-fvtc-fablab-in-appleton-wi</a></span></b><b><span class="fil hid"><a href="2011-07-05-multi-monitor-display-blinks-to-life.htm">2011-07-05-multi-monitor-display-blinks-to-life</a></span></b><b><span class="fil hid"><a href="2011-07-04-a-simple-python-grep.htm">2011-07-04-a-simple-python-grep</a></span></b><b><span class="fil hid"><a href="2011-05-08-dhmn-candybot-won.htm">2011-05-08-dhmn-candybot-won</a></span></b><b><span class="fil hid"><a href="2011-04-14-milwaukee-makerspace-grand-opening-road-trip.htm">2011-04-14-milwaukee-makerspace-grand-opening-road-trip</a></span></b><b><span class="fil hid"><a href="2011-04-04-milwaukee-makerspace-grand-opening-road-trip-preamble.htm">2011-04-04-milwaukee-makerspace-grand-opening-road-trip-preamble</a></span></b><b><span class="fil hid"><a href="2011-03-17-what-the-heck-is-a-barcamp.htm">2011-03-17-what-the-heck-is-a-barcamp</a></span></b><b><span class="fil hid"><a href="2011-02-21-arduino-mosfet-irobot-wheels.htm">2011-02-21-arduino-mosfet-irobot-wheels</a></span></b><b><span class="fil hid"><a href="2011-02-19-arduino-20x2-epson-lcd.htm">2011-02-19-arduino-20x2-epson-lcd</a></span></b><b><span class="fil hid"><a href="2011-02-05-dhmn-make-session.htm">2011-02-05-dhmn-make-session</a></span></b><b><span class="fil hid"><a href="2011-02-02-make-magazine-sent-me-a-free-toolkit.htm">2011-02-02-make-magazine-sent-me-a-free-toolkit</a></span></b><b><span class="fil hid"><a href="2011-02-01-gladiator-girl.htm">2011-02-01-gladiator-girl</a></span></b><b><span class="fil hid"><a href="2011-01-31-toward-an-appleton-wi-makerspace.htm">2011-01-31-toward-an-appleton-wi-makerspace</a></span></b><b><span class="fil hid"><a href="2011-01-24-madhackerhaus-1.htm">2011-01-24-madhackerhaus-1</a></span></b><b><span class="fil hid"><a href="2011-01-16-a-timelapse-doodle.htm">2011-01-16-a-timelapse-doodle</a></span></b><b><span class="fil hid"><a href="2010-11-20-arduino-youve-got-snail-mail-prototype-continues.htm">2010-11-20-arduino-youve-got-snail-mail-prototype-continues</a></span></b><b><span class="fil hid"><a href="2010-11-07-arduino-happy-birthday-emitter.htm">2010-11-07-arduino-happy-birthday-emitter</a></span></b><b><span class="fil hid"><a href="2002-07-08-self-hosted-linux.htm">2002-07-08-self-hosted-linux</a></span></b><b><span class="fil hid"><a href="2002-04-08-geocaching.htm">2002-04-08-geocaching</a></span></b><!-- END post-index -->
+<!-- BEGIN bottom-below-posts.template -->
+<span class="hig" onclick="toggleViewable()">More posts... (press for help or to quit)</span>
 
-<!-- End Document
-================================================== -->
+<div class="hfo"><span class="lef">BLOG(6)</span><span class="cen">BLOG MANUAL</span><span class="rig">BLOG(6)</span></div>
+
+<img class="ava" src="/mike/images/mike_2020-09-10_094946_solo.png" alt="Mike Putnam"/>
+
 </body>
 </html>
+<!-- END bottom-below-posts.template -->

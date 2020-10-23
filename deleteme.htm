@@ -4,19 +4,23 @@
 <title>mikeputnam</title>
 <style>
 a              { color: lime; }
-img.avatar     {height: 100px; }
 body           { background-color: #000000; color: #ccc; font-family: monospace; }
+img.avatar     { height: 100px; }
 span.arg       { color: red; font-weight: bold; }
+span.cen       { text-align: center; }
 span.hea       { color: red; display: block; margin-top: 1em; }
-span.hfo       { white-space: pre; display: block; font-weight: bold; margin-top: 1em; }
+span.hfo       { font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: flex;}
 span.hig       { background-color: blue; color: yellow; }
 span.ind       { margin-left: 30px; display: block; }
 span.ind-in    { margin-left: 30px; white-space: pre;}
+span.cen       { float: center; width:33.33333%; text-align: center}
+span.lef       { float: left; width:33.33333%; text-align: left}
+span.rig       { float: right; width:33.33333%; text-align: right}
 span.val       { color: lime; font-weight: bold; }
 </style>
 <body>
 
-<span class="hfo">BLOG(6)                                                  BLOG MANUAL                                                  BLOG(6)</span>
+<span class="hfo"><span class="lef">BLOG(6)</span><span class="cen">BLOG MANUAL</span><span class="rig">BLOG(6)</span></span>
 
 <span class="hea">NAME</span>
 <span class="ind"><span class="arg">blog </span> - words on a page for reading.</span>
@@ -90,9 +94,9 @@ span.val       { color: lime; font-weight: bold; }
 <span class="ind">2002-07-08-self-hosted-linux</span>
 <span class="ind">2002-04-08-geocaching</span>
 
-<span class="hfo">BLOG v42                                                  2020                                                  BLOG(6)</span>
+<span class="hfo"><span class="lef">BLOG(6)</span><span class="cen">BLOG MANUAL</span><span class="rig">BLOG(6)</span></span>
 
-<p><img class="avatar" src="mike_2020-09-10_094946_solo.png" alt="Mike Putnam"/></p>
+<img class="avatar" src="mike_2020-09-10_094946_solo.png" alt="Mike Putnam"/>
 
 </body>
 </html>

@@ -2,7 +2,10 @@
 <b>Arduino Happy Birthday Emitter</b>
 
 <u>DESCRIPTION</u>
-<b>Using an 8 ohm speaker rescued from a defunct <a href="http://www.irobot.com/">iRobot Scooba</a>, some radio wire from an underground dog fence, an <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove">Arduino Duemilanove</a> procured from <a href="http://adafruit.com/">http://adafruit.com/</a>, and a tone demo sketch from <a href="http://arduino.cc/en/Tutorial/Tone">http://arduino.cc/en/Tutorial/Tone</a> , the kids and I made a Happy Birthday emitter for mom.  Happy Birthday Amy!
+<b>Using an 8 ohm speaker rescued from a defunct <a href="http://www.irobot.com/">iRobot Scooba</a>, some radio wire from an underground dog fence, an <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove">Arduino Duemilanove</a> procured from <a href="http://adafruit.com/">http://adafruit.com/</a>, and a tone demo sketch from <a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody">https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody</a> , the kids and I made a Happy Birthday emitter for mom.  Happy Birthday Amy!
+</b>
 
-<p><b>Here are the <a href="https://gist.github.com/2820669">happybirthdayemitter.pde</a> sketch and accompanying <a href="https://gist.github.com/2820675">pitches.h</a> header file.</b></p>
-
+<b>
+<p>Here are the <a href="https://gist.github.com/2820669">happybirthdayemitter.pde</a> sketch and accompanying <a href="https://gist.github.com/2820675">pitches.h</a> header file.
+</p>
+</b>

@@ -2,11 +2,11 @@
 <b>A Timelapse Doodle</b>
 
 <u>SYNOPSIS</u>
-<b><iframe src="https://vimeo.com/18832769" width="400" height="295" frameborder="0"></iframe>
+<b><iframe src="https://ia800200.us.archive.org/4/items/ATimelapseDoodle/atimelapsedoodle-jan-2011.ogv" frameborder="0"></iframe>
 </b>
 
 <u>DESCRIPTION</u>
-<p><b>A little doodle inspired by <a href="http://rasterweb.net/raster/tag/tlbot/">Raster's creations with Timelapse Bot</a> and the 12/18/2010 Distributed Hacker Maker Network meeting where I made an impromptu claymation from stills taken of the meeting.
+<b><p>A little doodle inspired by <a href="http://rasterweb.net/raster/tag/tlbot/">Raster's creations with Timelapse Bot</a> and the 12/18/2010 Distributed Hacker Maker Network meeting where I made an impromptu claymation from stills taken of the meeting.
 </b>
 
 <b>While drawing has never really been an interest of mine, drawing in-real-life frames for animation is pretty fun.
@@ -19,6 +19,6 @@
 <ul>
 <li>Canon Powershot A550 (nothing fancy)</li>
 <li>Whiteboard/dry erase marker</li>
-<li>Fedora 14 Linux and ffmpeg2theora for <a href="http://archive.org/download/ATimelapseDoodle/atimelapsedoodle-jan-2011.ogv">the Ogg/Theora version of the movie. </a></li>
+<li>Fedora 14 Linux and ffmpeg2theora for exporting to the free and open Ogg/Theora format</a></li>
 </ul>
 </b>

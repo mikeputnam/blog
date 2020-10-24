@@ -3,8 +3,8 @@
 <p>
 Here's a simplistic text search script (<a
 href="https://github.com/mikeputnam/simplepythongrep">python grep</a>)
-that can be run quickly from a Windows command line or via your
-favorite editor (<a href="http://www.vim.org/">gvim</a>) ;)
+that can be run quickly from a Windows command line and used to search both local and network 
+mapped drives.
 </p>
 
 <pre>

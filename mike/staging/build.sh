@@ -6,7 +6,7 @@ postindexhtml=$postindexhtml"<u>FILES</u>"
 # 3 most recent posts are visible
 for post in $(find * | sort -r | head -n 3 );do postindexhtml=$postindexhtml"<b><span class=\"fil\"    ><a href=\"$post.htm\">$post</a></span></b>"; done
 # the rest are not visible; "hid"den.
-for post in $(find * | sort -r | tail -n +3);do postindexhtml=$postindexhtml"<b><span class=\"fil hid\"><a href=\"$post.htm\">$post</a></span></b>"; done
+for post in $(find * | sort -r | tail -n +4);do postindexhtml=$postindexhtml"<b><span class=\"fil hid\"><a href=\"$post.htm\">$post</a></span></b>"; done
 postindexhtml=$postindexhtml"<!-- END post-index -->"
 printf '%s\n' "$postindexhtml" | cat ../top-template.htm ../index-copy.htm ../bottom-above-posts-template.htm - ../bottom-below-posts-template.htm > ../../index.html
 # assemble all the blog pages from all the chunks

@@ -1,27 +1,32 @@
-<h2>Dell XPS 13 Ultrabook running OpenBSD snapshot from Nov 10, 2012</h2>
+<u>NAME</u>
+<b>Dell XPS 13 Ultrabook running OpenBSD snapshot from Nov 10, 2012</b>
 
-<p>
+<u>DESCRIPTION</u>
+<b><p>
 While on a shopping trip to Sam's Club in Appleton, WI, I thought I'd bring
 along a usb stick with the latest OpenBSD snapshot (Nov 10, 2012) to see if any
 of the recent laptops behave. I found success with this one:
-</p>
+</p></b>
 
-<p>
+<b><p>
 <a href="http://www.flickr.com/photos/27276950@N00/8176172026/sizes/l/in/photostream/">
 <img src="http://farm9.staticflickr.com/8338/8176172026_dfcc77ebd6_z.jpg"
 alt="Dell XPS 13 Ultrabook running OpenBSD snapshot from Nov 10, 2012"/>
 </a>
-</p>
+</p></b>
 
-<p>
+<b><p>
 <a href="http://www.flickr.com/photos/27276950@N00/8176144439/">
 <img src="http://farm9.staticflickr.com/8343/8176144439_c694d0c108_z.jpg"
 alt="Dell XPS 13 Ultrabook running OpenBSD $999"/>
 </a>
-</p>
+</p></b>
 
-<p>dmesg:</p>
+<b><p>
+dmesg:
+</p></b>
 
+<b><p>
 <pre>
 OpenBSD 5.2-current (GENERIC) #79: Sat Nov 10 15:36:37 MST 2012
     deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
@@ -128,9 +133,13 @@ softraid0 at root
 scsibus3 at softraid0: 256 targets
 root on sd1a (bc07431d71751f28.a) swap on sd1b dump on sd1b
 </pre>
+</p></b>
 
-<p>sysctl:</p>
+<b><p>
+sysctl:
+</p></b>
 
+<b><p>
 <pre>
 kern.ostype=OpenBSD
 kern.osrelease=5.2
@@ -568,3 +577,4 @@ vfs.ffs.dirhash_maxmem=2097152
 vfs.ffs.dirhash_mem=114669
 vfs.nfs.iothreads=-1
 </pre>
+</p></b>

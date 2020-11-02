@@ -1,12 +1,38 @@
-<h2>How can you organize your docker containers?</h2>
+<u>NAME</u>
+<b>How can you organize your docker containers?</b>
 
-<p>The moment you cross over the mental threshold from using <a href="https://www.docker.com/">docker</a> for local development/experimentation to using docker as a host for important things, you'll begin to have questions. One of the early questions I had was, "How can I organize all these containers when all <span id="code">$ docker ps -a</span> gives me is "NAMES"?  The answer to that question is <a href="https://docs.docker.com/engine/userguide/labels-custom-metadata/">Labels!</a></p>
+<u>DESCRIPTION</u>
+<b><p>
+The moment you cross over the mental threshold from using <a
+href="https://www.docker.com/">docker</a> for local development/experimentation
+to using docker as a host for important things, you'll begin to have questions.
+One of the early questions I had was, "How can I organize all these containers
+when all <span class="arg">$ docker ps -a</span> gives me is "NAMES"?  The answer
+to that question is <a
+href="https://docs.docker.com/engine/userguide/labels-custom-metadata/">Labels!</a>
+</p></b>
 
-<div class="post-image"><img src="/mike/images/2016-07-18-labelit.jpg"/><br/>Image source: http://imagegenerator.fuzzimo.com/embossedlabels/</div>
+<b><p>
+<img
+src="/mike/images/2016-07-18-labelit.jpg"/><br/>Image source:
+http://imagegenerator.fuzzimo.com/embossedlabels/
+</p></b>
 
-<p>You can assign labels to images within <span id="code">Dockerfiles</span> or to containers with the <span id="code">$ docker run</span> and <span id="code">$ docker daemon</span> commands.</p>
+<b><p>
+You can assign labels to images within <span class="arg">Dockerfiles</span> or
+to containers with the <span class="arg">$ docker run</span> and <span class="arg">$
+docker daemon</span> commands.
+</p></b>
 
-<p>You can query for images with <span id="code">$ docker images --filter "label=color=blue"</span>, containers with <span id="code">$ docker ps --filter "label=color=blue"</span> or via <span id="code">$ docker inspect</span></p>
+<b><p>
+You can query for images with <span class="arg">$ docker images --filter
+"label=color=blue"</span>, containers with <span class="arg">$ docker ps --filter
+"label=color=blue"</span> or via <span class="arg">$ docker inspect</span>
+</p></b>
 
-<p>Docker treats the labels as simple strings, but if you want to get fancy you can store string-escaped JSON data if you want to write your own label parser.</p>
+<b><p>
+Docker treats the labels as simple strings, but if you want to get fancy you
+can store string-escaped JSON data if you want to write your own label
+parser.
+</p></b>
 

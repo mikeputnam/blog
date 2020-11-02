@@ -1,12 +1,24 @@
-<h2>OpenBSD 5.5 Released!</h2>
+<u>NAME</u>
+<b>OpenBSD 5.5 Released!</b>
 
+<b><p>
 <img src="http://www.openbsd.org/images/puffy55.gif" />
+</b></p>
 
-<p>The latest installment of OpenBSD has released. Support the project and <a href="http://www.openbsd.org/orders.html">order a CD set.</a></p>
+<u>SYNOPSIS</u>
+<b><p>
+The latest installment of OpenBSD has released. Support the project and <a href="http://www.openbsd.org/orders.html">order a CD set.</a>
+</b></p>
 
-<p>Here's <a href="http://www.openbsd.org/55.html">"What's New"</a>i.</p>
+<u>DESCRIPTION</u>
+<b><p>
+Here's <a href="http://www.openbsd.org/55.html">"What's New"</a>i.
+</b></p>
 
-<p>Don't forget to apply the <a href="http://www.openbsd.org/errata55.html">fixes/errata</a> that were created after the release was made -- this includes the fix for <a href="http://heartbleed.com/">heartbleed</a>.</p>
+<b><p>
+Don't forget to apply the <a href="http://www.openbsd.org/errata55.html">fixes/errata</a> that were created after the release was made -- this includes the fix for <a href="http://heartbleed.com/">heartbleed</a>.
+</b></p>
 
-<p>Big open-source thank you hug to the project! Love OpenBSD, OpenSSH, tmux, cwm, man pages, pf, ...</p>
-
+<b><p>
+Big open-source thank you hug to the project! Love OpenBSD, OpenSSH, tmux, cwm, man pages, pf, ...
+</b></p>

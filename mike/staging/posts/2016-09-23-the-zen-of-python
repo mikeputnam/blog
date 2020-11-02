@@ -1,9 +1,13 @@
-<h2>The Zen of Python</h2>
+<u>NAME</u>
+<b>The Zen of Python</b>
 
-<p>
+<u>SYNOPSIS</u>
+<b><p>
 While these tenets were composed for Python, they apply to quite a lot of things.
-</p>
+</p></b>
 
+<u>DESCRIPTION</u>
+<b>
 <pre>
 mike@lappy ~$ python -c "import this"
 The Zen of Python, by Tim Peters
@@ -29,4 +33,4 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 mike@lappy ~$
 </pre>
-
+</b>

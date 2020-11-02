@@ -1,12 +1,16 @@
-<h2>A simple python grep</h2>
+<u>NAME</u>
+<b>A simple python grep</b>
 
-<p>
+<u>SYNOPSIS</u>
+<b><p>
 Here's a simplistic text search script (<a
 href="https://github.com/mikeputnam/simplepythongrep">python grep</a>)
 that can be run quickly from a Windows command line and used to search both local and network 
 mapped drives.
-</p>
+</p></b>
 
+<u>DESCRIPTION</u>
+<b><p>
 <pre>
 import os
 import sys
@@ -25,4 +29,4 @@ for root,dir,files in os.walk(pathtosearch):
                 print "[%s] found in [%s] , line number [%d]" %(searchterm.upper(),path,num+1)
 
 </pre>
-
+</p></b>

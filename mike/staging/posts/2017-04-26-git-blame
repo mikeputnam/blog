@@ -1,7 +1,11 @@
-<h2>An introduction to git blame</h2>
+<u>NAME</u>
+<b>An introduction to git blame</b>
 
-<div class='embed-container'>
+<b><p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nLWJV2SdXY4" frameborder="0" allowfullscreen></iframe>
-</div>
+</p></b>
 
-<p>A gentle introduction to git blame.</p>
+<u>DESCRIPTION</u>
+<b><p>
+A gentle introduction to git blame.
+</p></b>

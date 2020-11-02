@@ -46,28 +46,60 @@ function toggleViewable() {
 <div class="hfo"><span class="lef">BLOG(6)</span><span class="cen">BLOG MANUAL</span><span class="rig">BLOG(6)</span></div>
 <!-- END top.template -->
 
-<h2>Tail foreverjs logs</h2>
+<u>NAME</u>
+<b>Tail foreverjs logs</b>
 
-<p><a href="https://github.com/foreverjs/forever">Forever</a> is "a simple CLI tool for ensuring that a given script runs continuously (i.e. forever)."</p>
+<u>SYNOPSIS</u>
+<b><p>
+<a href="https://github.com/foreverjs/forever">Forever</a> is "a simple CLI
+tool for ensuring that a given script runs continuously (i.e. forever)."
+</p></b>
 
-<p>Forever includes a command ( <span id="code">$ forever logs 0</span> ) to show you the last 100 lines of stdout/stderr for the processes it is watching. Often 100 lines is enough to see what you were hoping to see.</p>
+<u>DESCRIPTION</u>
+<b><p>
+Forever includes a command ( <span class="arg">$ forever logs 0</span> ) to
+show you the last 100 lines of stdout/stderr for the processes it is watching.
+Often 100 lines is enough to see what you were hoping to see.
+</p></b>
 
-<p>But sometimes 100 lines is not enough and instead you would like to see a live tail of the forever watched process. Linux/Unix based operating system tools to the rescue!</p>
+<b><p>
+But sometimes 100 lines is not enough and instead you would like to see a
+live tail of the forever watched process. Linux/Unix based operating system
+tools to the rescue!
+</p></b>
 
-<p>Running <span id="code">$ forever logs</span> (assuming you are only watching a single process) will emit 3 lines of output. The third line contains the full path to the log file. Knowing this we can construct a simple pipeline:</p>
+<b><p>
+Running <span class="arg">$ forever logs</span> (assuming you are only watching
+a single process) will emit 3 lines of output. The third line contains the full
+path to the log file. Knowing this we can construct a simple pipeline:
+</p></b>
 
-<pre>
+<b><p><span class="arg">
 $ forever logs | awk 'NR==3' | awk '{print $4}' | xargs tail -f
-</pre>
+</span></p></b>
 
-<p>Above, forever emits its output => awk grabs the 3rd line using it's "number of record/NR" syntax => another awk prints the 4th space delimited string from that line (the path) => and finally xargs takes that and runs tail -f(ollow)!</p>
+<b><p>
+Above, forever emits its output => awk grabs the 3rd line using it's "number
+of record/NR" syntax => another awk prints the 4th space delimited string from
+that line (the path) => and finally xargs takes that and runs tail
+-f(ollow)!
+</p></b>
 
-<p>Familiarity with these *nix tools is infinitely reuseable as plain text is the most common protocol and these tools are purpose built for working with text.</p>
+<b><p>
+Familiarity with these *nix tools is infinitely reuseable as plain text is
+the most common protocol and these tools are purpose built for working with
+text.
+</p></b>
 
-<p>2020-04-16 Edit: If you are running a version more recent than v0.14.1 released Jul 1, 2015, there's a built-in flag to tail logs. :facepalm:</p>
-<pre>
+<u>BUGS</u>
+<b><p>
+2020-04-16 Edit: If you are running a version more recent than v0.14.1
+released Jul 1, 2015, there's a built-in flag to tail logs. <span class="arg">:facepalm:</span>
+</p></b>
+
+<b><p><span class="arg">
 $ forever logs 0 -f
-</pre>
+</span></p></b>
 <!-- BEGIN bottom-above-posts.template -->
 <u>SEE ALSO</u>
 <b>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -81,7 +113,7 @@ $ forever logs 0 -f
 <u>AUTHORS</u>
 <b>Mike Putnam <span class="val">mike@theputnams.net</span></b>
 <!-- END bottom-above-posts.template -->
-<!-- BEGIN post-index --><u>FILES</u><b><span class="fil"    ><a href="2017-07-06-whats-going-on-in-tech.htm">2017-07-06-whats-going-on-in-tech</a></span></b><b><span class="fil"    ><a href="2017-04-26-git-blame.htm">2017-04-26-git-blame</a></span></b><b><span class="fil"    ><a href="2016-10-27-choose-your-own-adventure-lockin.htm">2016-10-27-choose-your-own-adventure-lockin</a></span></b><b><span class="fil hid"><a href="2016-10-27-choose-your-own-adventure-lockin.htm">2016-10-27-choose-your-own-adventure-lockin</a></span></b><b><span class="fil hid"><a href="2016-09-23-the-zen-of-python.htm">2016-09-23-the-zen-of-python</a></span></b><b><span class="fil hid"><a href="2016-07-18-organize-your-docker-stuff-with-labels.htm">2016-07-18-organize-your-docker-stuff-with-labels</a></span></b><b><span class="fil hid"><a href="2016-02-15-tail-foreverjs-logs.htm">2016-02-15-tail-foreverjs-logs</a></span></b><b><span class="fil hid"><a href="2015-06-30-coder-cooperative.htm">2015-06-30-coder-cooperative</a></span></b><b><span class="fil hid"><a href="2014-09-28-learning-to-weld.htm">2014-09-28-learning-to-weld</a></span></b><b><span class="fil hid"><a href="2014-05-04-a-copper-thing.htm">2014-05-04-a-copper-thing</a></span></b><b><span class="fil hid"><a href="2014-05-01-openbsd-55-released-today.htm">2014-05-01-openbsd-55-released-today</a></span></b><b><span class="fil hid"><a href="2014-04-30-what-to-make.htm">2014-04-30-what-to-make</a></span></b><b><span class="fil hid"><a href="2013-10-10-appleton-makerspace-grand-opening.htm">2013-10-10-appleton-makerspace-grand-opening</a></span></b><b><span class="fil hid"><a href="2013-03-18-a-birthday.htm">2013-03-18-a-birthday</a></span></b><b><span class="fil hid"><a href="2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot.htm">2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot</a></span></b><b><span class="fil hid"><a href="2011-09-28-why-i-love-barcamp.htm">2011-09-28-why-i-love-barcamp</a></span></b><b><span class="fil hid"><a href="2011-07-05-multi-monitor-display-blinks-to-life.htm">2011-07-05-multi-monitor-display-blinks-to-life</a></span></b><b><span class="fil hid"><a href="2011-07-04-a-simple-python-grep.htm">2011-07-04-a-simple-python-grep</a></span></b><b><span class="fil hid"><a href="2011-05-08-dhmn-candybot-won.htm">2011-05-08-dhmn-candybot-won</a></span></b><b><span class="fil hid"><a href="2011-04-14-milwaukee-makerspace-grand-opening-road-trip.htm">2011-04-14-milwaukee-makerspace-grand-opening-road-trip</a></span></b><b><span class="fil hid"><a href="2011-03-17-what-the-heck-is-a-barcamp.htm">2011-03-17-what-the-heck-is-a-barcamp</a></span></b><b><span class="fil hid"><a href="2011-02-21-arduino-mosfet-irobot-wheels.htm">2011-02-21-arduino-mosfet-irobot-wheels</a></span></b><b><span class="fil hid"><a href="2011-02-05-dhmn-make-session.htm">2011-02-05-dhmn-make-session</a></span></b><b><span class="fil hid"><a href="2011-02-01-gladiator-girl.htm">2011-02-01-gladiator-girl</a></span></b><b><span class="fil hid"><a href="2011-01-31-toward-an-appleton-wi-makerspace.htm">2011-01-31-toward-an-appleton-wi-makerspace</a></span></b><b><span class="fil hid"><a href="2011-01-24-madhackerhaus-1.htm">2011-01-24-madhackerhaus-1</a></span></b><b><span class="fil hid"><a href="2011-01-16-a-timelapse-doodle.htm">2011-01-16-a-timelapse-doodle</a></span></b><b><span class="fil hid"><a href="2010-11-07-arduino-happy-birthday-emitter.htm">2010-11-07-arduino-happy-birthday-emitter</a></span></b><b><span class="fil hid"><a href="2002-07-08-self-hosted-linux.htm">2002-07-08-self-hosted-linux</a></span></b><b><span class="fil hid"><a href="2002-04-08-geocaching.htm">2002-04-08-geocaching</a></span></b><!-- END post-index -->
+<!-- BEGIN post-index --><u>FILES</u><b><span class="fil"    ><a href="2017-07-06-whats-going-on-in-tech.htm">2017-07-06-whats-going-on-in-tech</a></span></b><b><span class="fil"    ><a href="2017-04-26-git-blame.htm">2017-04-26-git-blame</a></span></b><b><span class="fil"    ><a href="2016-10-27-choose-your-own-adventure-lockin.htm">2016-10-27-choose-your-own-adventure-lockin</a></span></b><b><span class="fil hid"><a href="2016-09-23-the-zen-of-python.htm">2016-09-23-the-zen-of-python</a></span></b><b><span class="fil hid"><a href="2016-07-18-organize-your-docker-stuff-with-labels.htm">2016-07-18-organize-your-docker-stuff-with-labels</a></span></b><b><span class="fil hid"><a href="2016-02-15-tail-foreverjs-logs.htm">2016-02-15-tail-foreverjs-logs</a></span></b><b><span class="fil hid"><a href="2015-06-30-coder-cooperative.htm">2015-06-30-coder-cooperative</a></span></b><b><span class="fil hid"><a href="2014-09-28-learning-to-weld.htm">2014-09-28-learning-to-weld</a></span></b><b><span class="fil hid"><a href="2014-05-04-a-copper-thing.htm">2014-05-04-a-copper-thing</a></span></b><b><span class="fil hid"><a href="2014-05-01-openbsd-55-released-today.htm">2014-05-01-openbsd-55-released-today</a></span></b><b><span class="fil hid"><a href="2014-04-30-what-to-make.htm">2014-04-30-what-to-make</a></span></b><b><span class="fil hid"><a href="2013-10-10-appleton-makerspace-grand-opening.htm">2013-10-10-appleton-makerspace-grand-opening</a></span></b><b><span class="fil hid"><a href="2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot.htm">2012-11-11-dell-xps-13-ultrabook-running-openbsd-snapshot</a></span></b><b><span class="fil hid"><a href="2011-09-28-why-i-love-barcamp.htm">2011-09-28-why-i-love-barcamp</a></span></b><b><span class="fil hid"><a href="2011-07-04-a-simple-python-grep.htm">2011-07-04-a-simple-python-grep</a></span></b><b><span class="fil hid"><a href="2011-05-08-dhmn-candybot-won.htm">2011-05-08-dhmn-candybot-won</a></span></b><b><span class="fil hid"><a href="2011-04-14-milwaukee-makerspace-grand-opening-road-trip.htm">2011-04-14-milwaukee-makerspace-grand-opening-road-trip</a></span></b><b><span class="fil hid"><a href="2011-03-17-what-the-heck-is-a-barcamp.htm">2011-03-17-what-the-heck-is-a-barcamp</a></span></b><b><span class="fil hid"><a href="2011-02-21-arduino-mosfet-irobot-wheels.htm">2011-02-21-arduino-mosfet-irobot-wheels</a></span></b><b><span class="fil hid"><a href="2011-02-05-dhmn-make-session.htm">2011-02-05-dhmn-make-session</a></span></b><b><span class="fil hid"><a href="2011-02-01-gladiator-girl.htm">2011-02-01-gladiator-girl</a></span></b><b><span class="fil hid"><a href="2011-01-31-toward-an-appleton-wi-makerspace.htm">2011-01-31-toward-an-appleton-wi-makerspace</a></span></b><b><span class="fil hid"><a href="2011-01-24-madhackerhaus-1.htm">2011-01-24-madhackerhaus-1</a></span></b><b><span class="fil hid"><a href="2011-01-16-a-timelapse-doodle.htm">2011-01-16-a-timelapse-doodle</a></span></b><b><span class="fil hid"><a href="2010-11-07-arduino-happy-birthday-emitter.htm">2010-11-07-arduino-happy-birthday-emitter</a></span></b><b><span class="fil hid"><a href="2002-07-08-self-hosted-linux.htm">2002-07-08-self-hosted-linux</a></span></b><b><span class="fil hid"><a href="2002-04-08-geocaching.htm">2002-04-08-geocaching</a></span></b><!-- END post-index -->
 <!-- BEGIN bottom-below-posts.template -->
 <span class="hig" onclick="toggleViewable()">More posts... (press for help or to quit)</span>
 
